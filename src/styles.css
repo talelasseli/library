@@ -1,6 +1,6 @@
 body {
   height: 100%;
-  background-color: #fff;
+  background-color: #f0f4f8;
   display: flex;
   flex-direction: column ;
   font-style: normal;
@@ -10,11 +10,10 @@ container {
   margin-top: 50px;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-columns: repeat(6, minmax(200px, 1fr));
   grid-template-rows: repeat(2, minmax(300px, 1fr));
   grid-auto-rows: minmax(300px, 1fr);
   background-color: #f0f4f8;
-  height: 100%;
   gap: 50px;
   padding: 50px;
 }
@@ -23,7 +22,7 @@ header {
   position: fixed;
   width: 100%;
   padding: 10px 20px;
-  border-bottom: 1px solid;
+
   display: flex;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
@@ -31,7 +30,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   font-size:xx-large;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stronger bottom shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); 
   background-color: #6b7280;
   z-index: 1000;
   
@@ -47,13 +46,13 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px; /* Reduced padding for a cleaner look */
-  background-color: white; /* Light off-white background for a cleaner book cover */
-  border-radius: 15px; /* Slightly rounded corners */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.05); /* Soft shadow for depth */
+  padding: 20px;
+  background-color: white; 
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.05); 
 
   position: relative;
-  overflow: hidden; /* Ensures content stays inside */
+  overflow: hidden; 
 }
 #addButton {
   font-size: 25px;
@@ -61,8 +60,8 @@ header {
 }
 #addButton {
   border: none;
-  border-radius: 10%; /* Makes the button circular */
-  background-color: #9ca3af; /* Primary blue color */
+  border-radius: 10%;
+  background-color: #9ca3af; 
   color: white;
   font-size: 1.5rem;
   font-weight: bold;
@@ -74,17 +73,17 @@ header {
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect */
+
 #addButton:hover {
-  background-color: #6b7280; /* Darker blue on hover */
+  background-color: #6b7280;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Active (pressed) effect */
+
 #addButton:active {
-  background-color: #4b5563; /* Even darker blue */
+  background-color: #4b5563; 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transform: scale(0.95); /* Slightly smaller when clicked */
+  transform: scale(0.95); 
 }
 
 
@@ -96,7 +95,7 @@ dialog {
   
 }
 dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.5); /* Dim the background */
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 form {
   display: flex;
@@ -140,14 +139,13 @@ label {
 
 
   font-weight: bold;
-  color: #333; /* Dark title for better contrast */
+  color: #333;
   text-align: center;
   margin: 0;
 }
 
 .removebtn {
-  background: linear-gradient(145deg, #ff3b30, #ff1a1a); /* Red gradient */
-  color: white;
+  background: linear-gradient(145deg, #ff3b30, #ff1a1a); 
   font-weight: bold;
   height: 5px;
   padding: 10px;
@@ -157,8 +155,8 @@ label {
   text-transform: uppercase;
   cursor: pointer;
   display: flex;
-  align-items: center; /* Align text and icon vertically */
-  justify-content: center; /* Center content horizontally */
+  align-items: center; 
+  justify-content: center; 
   transition: all 0.3s ease;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2),
     -4px -4px 15px rgba(255, 255, 255, 0.3);
